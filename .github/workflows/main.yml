@@ -28,17 +28,17 @@ jobs:
           aws-region: eu-north-1
 
       - name: Terraform Init
-        working-directory: ./Terraform
+        working-directory: ./eks-install
         run: terraform init
 
       - name: Terraform Validate
-        working-directory: ./Terraform
+        working-directory: ./eks-install
         run: terraform validate
 
       - name: Terraform Plan
-        working-directory: ./Terraform
+        working-directory: ./eks-install
         run: terraform plan
 
       - name: Terraform Apply
-        working-directory: ./Terraform
+        working-directory: ./eks-install
         run: terraform apply -auto-approve

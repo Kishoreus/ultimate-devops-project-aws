@@ -38,3 +38,7 @@ module "eks" {
   subnet_ids      = module.vpc.private_subnet_ids
   node_groups     = var.node_groups
 }
+
+module "eks" {
+  source = "./modules/ecr"
+}

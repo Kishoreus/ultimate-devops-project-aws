@@ -39,6 +39,6 @@ module "eks" {
   node_groups     = var.node_groups
 }
 
-module "eks" {
-  source = "./modules/ecr"
+module "ecrs" {
+  source = "./modules/ecrs"
 }
